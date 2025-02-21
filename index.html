@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quach Thao Trang - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Quach Thao Trang
+          <div class="contact_info">
+            <img src="https://img.icons8.com/ios/50/secured-letter--v1.png" alt="secured-letter--v1"/>
+          qthaotrang0905@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="https://img.icons8.com/ios/50/phone--v1.png" alt="phone--v1"/>
+          +8412312312
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="recommendation">Recommendation</a>
+        </div>
+      </div>    
+    </nav>
+
+    <section id="about-me" class="container">
+      <div>
+        <img src="picture/365613483_827826782342261_8191975022148239534_n.png"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Quach Thao Trang!
+          </h1>
+          <p>
+            I am a passionate Front-End Developer with a strong focus on creating intuitive and visually appealing user interfaces. With a keen eye for design and a deep understanding of modern web technologies, I specialize in building responsive and interactive websites that enhance user experience.
+            My goal is to craft seamless digital experiences that are both functional and aesthetically pleasing. Let’s create something amazing together!
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="https://img.icons8.com/?size=100&id=1043&format=png"/>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://img.icons8.com/?size=50&id=1045&format=png"/>
+          <h6>CSS</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://img.icons8.com/?size=50&id=3752&format=png"/>
+            <h6>JavaScript</h6>
+            <p>1 year experience</p>
+        </div>   
+
+        <div class="skill">
+            <img src="https://img.icons8.com/?size=50&id=2572&format=png"/>
+            <h6>Java</h6>
+            <p>2 year experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="https://img.icons8.com/?size=50&id=58811&format=png"/>
+          <h6>React</h6>
+          <p>1 year experience</p>
+        </div> 
+      </div>
+    </section>
+
+    <!--Projects-->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+       <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Portfilio Website</h3>
+            <ul>
+              <li>Created a portfilio website using HTML, CSS, and JavaScript</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>To-Do List App</h3>
+            <ul>
+              <li>Developed a simple to-do list application using HTML, CSS, and JavaScript</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Unit Conversions</h3>
+            <ul>
+              <li>Build a conversion application for temperature, weight, and distance using HTML, CSS, and JavaScript</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Trang is a dedicated and detail-oriented developer. 
+          She always ensures that her work is of the highest quality and is willing to take on challenges with a positive attitude. 
+          Her problem-solving skills make her a great asset to any team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of working with Trang on multiple projects. 
+          She is proactive, highly skilled, and always eager to learn new technologies. 
+          Her ability to collaborate and contribute innovative ideas makes her stand out in any development team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Trang is an excellent front-end developer with a strong eye for design and user experience. 
+          She is passionate about creating clean, responsive, and efficient web applications. 
+          Any team would be lucky to have her!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation(showPopup(true))">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#c2c2c2" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="https://img.icons8.com/?size=50&id=11658&format=png"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
